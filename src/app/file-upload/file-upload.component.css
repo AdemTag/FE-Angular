@@ -1,0 +1,54 @@
+/* Style global pour centrer le contenu */
+body, html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f5; /* Couleur de fond légère */
+}
+
+/* Personnalisation des boutons pour les rendre plus jolis */
+.btn {
+  background-color: rgba(0, 123, 255, 0.11); /* Couleur de fond principale pour les boutons */
+  color: #ffffff; /* Couleur du texte pour les boutons */
+  font-weight: 500; /* Rend le texte un peu plus gras */
+  letter-spacing: 1px; /* Espacement des lettres pour un effet plus spacieux */
+  transition: background-color 0.3s ease; /* Transition fluide pour le changement de couleur */
+}
+
+.btn:hover, .btn:focus {
+  background-color: #0cb300; /* Couleur de fond au survol ou au focus */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Ombre pour un effet en relief */
+}
+
+/* Styles spécifiques pour centrer et embellir la carte */
+.card {
+  margin: auto; /* Centre la carte horizontalement */
+  width: 50%; /* Définit la largeur de la carte */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Ajoute une ombre pour un effet de profondeur */
+  border-radius: 8px; /* Arrondit les coins de la carte */
+}
+
+.card-content {
+  padding: 20px; /* Ajoute de l'espace à l'intérieur de la carte pour une meilleure lisibilité */
+}
+
+.card-title {
+  font-size: 24px; /* Ajuste la taille de la police pour le titre */
+  margin-bottom: 20px; /* Ajoute de l'espace sous le titre */
+}
+
+.collection-item {
+  border-bottom: none; /* Supprime la bordure inférieure pour un look plus propre */
+}
+
+/* Ajustements pour le conteneur de la barre de progression et la barre elle-même */
+.progress {
+  background-color: #e0e0e0; /* Couleur de fond pour la barre de progression */
+  border-radius: 2px; /* Légèrement arrondi */
+}
+
+.determinate {
+  background-color: #007bff; /* Couleur de la barre de progression */
+}

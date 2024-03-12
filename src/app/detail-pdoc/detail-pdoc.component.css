@@ -1,0 +1,45 @@
+.container {
+  width: 80%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.card {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px 8px 0 0;
+}
+
+.center-align {
+  text-align: center;
+}
+
+.button-group button {
+  margin: 10px;
+  background-color: #007bff; /* Bleu classique moderne */
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.button-group button:hover {
+  background-color: #0056b3;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.collection .collection-item {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.teal-text {
+  color: #009688; /* Teal pour une touche moderne sans être trop audacieuse */
+}

@@ -1,0 +1,149 @@
+/* Réinitialisation et Typographie de base */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  background-color: #f4f4f4;
+}
+
+/* Navigation */
+.navbar {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* Conteneur principal et Cartes */
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  width: 240px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card-content {
+  padding: 16px;
+}
+
+/* Boutons et Liens */
+button, .btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+button:hover, .btn:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+}
+/* Container principal */
+.document-list-container {
+  background-color: #e0e0e0; /* Fond gris */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Titres */
+.section-title {
+  color: var(--primary-color);
+  font-family: 'Helvetica', sans-serif;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-transform: uppercase; /* Transforme le texte en majuscules */
+}
+
+/* Liste de documents */
+.document-list {
+  list-style: none; /* Supprime les puces */
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+
+.document-list li {
+  background-color: #f0f0f0; /* Légèrement plus clair que le fond */
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Boutons */
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.add-document {
+  background-color: #4CAF50; /* Vert */
+  color: white;
+}
+
+.delete-document {
+  background-color: #f44336; /* Rouge */
+  color: white;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}

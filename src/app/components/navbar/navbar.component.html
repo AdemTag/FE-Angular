@@ -1,0 +1,20 @@
+<mat-toolbar color="primary">
+  <a [routerLink]="'/'" mat-icon-button class="example-icon" aria-label="Example icon-button">
+    <mat-icon>menu_book</mat-icon>
+  </a>
+  <span>Alyf Organizer</span>
+  <span class="example-spacer"></span>
+  <a *ngIf="!isLoggedIn" [routerLink]="'/login'" mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button">
+    Login
+  </a>
+  <a *ngIf="!isLoggedIn" [routerLink]="'/signup'" mat-icon-button class="example-icon favorite-icon mr20 ml20" aria-label="Example icon-button">
+    Register
+  </a>
+  <a *ngIf="isLoggedIn" (click)="logout()" mat-icon-button class="example-icon favorite-icon mr20 ml20" aria-label="Example icon-button">
+    Logout
+  </a>
+  <button *ngIf="isLoggedIn && user" routerLink="/admin/profile" mat-icon-button class="example-icon favorite-icon mr20 ml20" aria-label="Example icon-button">
+    {{user.username}}
+  </button>
+
+</mat-toolbar>

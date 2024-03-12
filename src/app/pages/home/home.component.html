@@ -1,0 +1,34 @@
+<!-- Compiled and minified CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+<div class="document-list-container">
+  <h2 class="section-title">Liste de Porte Documents</h2>
+
+
+</div>
+
+
+
+<div class="container">
+  <div class="row">
+    <div (click)="goToPdoc(pdoc)" *ngFor="let pdoc of pdoclist" class="col m4 s6">
+      <div  appBorderCard class="card horizontal">
+        <div class="card-image">
+          <img [src]="pdoc.image" />
+        </div>
+        <div class="card-stacked">
+          <div class="card-content">
+            <p>{{ pdoc.nom }}</p>
+
+            <p>Session : {{ pdoc.session }}</p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
